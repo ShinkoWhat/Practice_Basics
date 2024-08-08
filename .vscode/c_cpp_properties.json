@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "Practice_Basics",
+            "includePath": [
+                "${workspaceFolder}/include",
+                "${workspaceFolder}/../dependencies/glfw-3.4/include/",
+                "${workspaceFolder}/../dependencies/glad/include"
+            ],
+            "compilerPath": "C:/Users/plato/Main/mingw64/bin/g++.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "intelliSenseMode": "gcc-x86"
+        }
+    ],
+    "version": 4
+}

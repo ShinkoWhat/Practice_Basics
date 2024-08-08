@@ -1,0 +1,39 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "cppbuild",
+      "label": "C/C++: g++.exe active file build",
+      "command": "C:\\Users\\plato\\Main\\mingw64\\bin\\g++.exe",
+      "args": [
+        "-fdiagnostics-color=always",
+        "${workspaceRoot}/src/*.cpp",
+        "${workspaceRoot}/../dependencies/glad/src/glad.c",
+        "-I${workspaceRoot}/include",
+        "--std=c++11",
+        "-I${workspaceRoot}/../dependencies/glfw-3.4/include/",
+        "-L${workspaceRoot}/../dependencies/glfw-3.4/lib-mingw-w64",
+        "-I${workspaceRoot}/../dependencies/glad/include",
+        "-static",
+        "-lopengl32",
+        "-lglfw3",
+        "-lgdi32",
+        "-o",
+        "${workspaceRoot}/${workspaceFolderBasename}.exe"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "Task created with debugging"
+    }
+  ]
+}
