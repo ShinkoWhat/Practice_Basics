@@ -8,12 +8,10 @@ void framebufferSizeCallback(GLFWwindow* window, int width, int height);
 namespace Context {
   class MainContext {
     private:
-      int initialization();
       GLFWwindow* _window;
 
     protected:
-      void createWindow(Context::MainContext* contextInst);
-
+      
     public:
       MainContext(); 
 
@@ -24,5 +22,8 @@ namespace Context {
       GLFWwindow* getWindow() {
         return _window;
       }    
+
+      void createWindow(Context::MainContext& contextInst);
+      void initialization();
   };
 }
